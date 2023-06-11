@@ -1,0 +1,108 @@
+header{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #00203b;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+header .header_container{
+  width: 95%;
+  height: 73px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .header_container .logo_and_navbar{
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+header .header_container .logo_and_navbar .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00203b;
+}
+
+header .header_container .logo_and_navbar nav ul{
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: -2px;
+}
+
+header .header_container .logo_and_navbar nav ul li{
+  height: 100%;
+  margin-top: 2px;
+}
+
+header .header_container .logo_and_navbar nav ul li a{
+  font-size: 18px;
+  padding: 20px;
+  display: inline-block;
+  z-index: 9;
+  border:none;
+  position: relative;
+}
+
+header .header_container .logo_and_navbar nav ul li a svg{
+  position: absolute;
+  left: -2px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+header .header_container .logo_and_navbar nav ul li a,
+header .header_container .logo_and_navbar nav ul li a:after,
+header .header_container .logo_and_navbar nav ul li a:before {
+  transition: all .5s;
+}
+
+header .header_container .logo_and_navbar nav ul li a:after{
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #00b753;
+  height: 2px;
+}
+
+header .header_container .logo_and_navbar nav ul li a:hover{
+  color: #00b24a !important;
+}
+
+header .header_container .logo_and_navbar nav ul li a:hover:after {
+  width: 100%;
+}
+
+header .header_container .btn_login_header button{
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 6px 51px 7px;
+  background-color: #00b753;
+  font-family: yekan;
+  font-size: 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+header .header_container .btn_login_header button:hover{
+  background-color: #47ec7e;
+}
+

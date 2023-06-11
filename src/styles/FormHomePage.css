@@ -1,0 +1,170 @@
+.form_home {
+  width: 100%;
+}
+
+.form_home .form_home_holder {
+  width: 72%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form_home .form_home_holder .get_counseling {
+  width: 50%;
+}
+
+.form_home .form_home_holder .get_counseling h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.form_home .form_home_holder .get_counseling form {
+  width: 100%;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items:hover {
+  color: #00b753;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items p {
+  font-size: 17px;
+  transition: all ease 0.3s;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all ease 0.3s;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items input:hover {
+  border: 1px solid #00b753;
+}
+/* .form_home .form_home_holder .get_counseling form .form_home_items input:hover + .form_home .form_home_holder .get_counseling form .form_home_items p{
+  color: #00b24a;
+} */
+
+.form_home
+  .form_home_holder
+  .get_counseling
+  form
+  .form_home_items
+  input::-webkit-input-placeholder {
+  /* Edge */
+  font-family: yekan;
+  color: #bcbcbc;
+  font-size: 15px;
+}
+
+.form_home
+  .form_home_holder
+  .get_counseling
+  form
+  .form_home_items
+  input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: yekan;
+  color: #bcbcbc;
+  font-size: 15px;
+}
+
+.form_home
+  .form_home_holder
+  .get_counseling
+  form
+  .form_home_items
+  input::placeholder {
+  font-family: yekan;
+  color: #bcbcbc;
+  font-size: 15px;
+}
+
+.form_home
+  .form_home_holder
+  .get_counseling
+  form
+  .form_home_items
+  .getnumber::-webkit-outer-spin-button,
+.form_home
+  .form_home_holder
+  .get_counseling
+  form
+  .form_home_items
+  .getnumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form_home
+  .form_home_holder
+  .get_counseling
+  form
+  .form_home_items
+  .getnumber[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items div {
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: #bcbcbc;
+  outline: none;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+  transition: all ease 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items div span{
+  font-size: 15px;
+}
+
+.form_home .form_home_holder .get_counseling form .get_counseling_btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.form_home .form_home_holder .get_counseling form .get_counseling_btn button {
+  padding: 5px 120px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-family: yekan;
+  font-size: 14px;
+  background-color: #bcbcbc;
+  color: #fff;
+}
+
+.form_home .form_home_holder .get_counseling form .get_counseling_btn button:hover{
+  cursor: no-drop;
+}
+
+.form_home .form_home_holder .form_home_img {
+  width: 48%;
+  background-image: url(../images/formImg.f5c74e98.png);
+  background-position: center;
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  border-radius: 0 45px 45px 0;
+  margin-top: 10px;
+}
