@@ -3,8 +3,9 @@
   padding: 100px 0;
   margin: 130px 0;
   background: url(../images/1440-614.c4367429.jpg) no-repeat;
-  background-size: 110% 100%;
-  background-position: center;
+  /* background-size: 110% 100%; */
+  background-size: cover;
+  background-position: center center;
   background-color: #002746;
   color: #fff;
 }
@@ -52,4 +53,26 @@
 .history .history_holder .history_list .history_list_item p{
   font-size: 20px;
   padding: 0 !important;
+}
+
+
+@media screen and (max-width:1050px){
+
+  .history{
+    background-size: cover;
+    background-position: -300px center;
+  }
+
+}
+
+@media screen and (max-width:960px){
+
+  .history{
+    /* padding: 100px 0;
+    margin: 130px 0; */
+    background-size: 1350px 100%;
+    /* background-size: cover; */
+    background-position: -250px center;
+  }
+
 }

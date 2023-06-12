@@ -19,32 +19,38 @@ const ProductsHomePage = () => {
           </ul>
         </div>
         <div className="products_cards">
-          <a href="#"  className="card">
-              <div className='imgbgc'>
-                <div className='img_holder'>
-                  <img src="https://mabnadp.com/_next/static/media/rahavard365.f6f28db5.svg" alt="" />
-                </div>
+          <a href="#" className="card">
+            <div className='imgbgc'>
+            </div>
+              <div className='img_holder'>
+                <img src="https://mabnadp.com/_next/static/media/rahavard365.f6f28db5.svg" alt="" />
               </div>
+            <div className='products_card_para'>
               <h4>ره آورد</h4>
               <p>مرجع اطلاعات و تحلیل بازار های مالی</p>
+            </div>
           </a>
-          <a href="#"  className="card">
-              <div className='imgbgc'>
-                <div className='img_holder'>
-                  <img src="https://mabnadp.com/_next/static/media/vasam.c7bc6308.svg" alt="" />
-                </div>
+          <a href="#" className="card">
+            <div className='imgbgc'>
+            </div>
+              <div className='img_holder'>
+                <img src="https://mabnadp.com/_next/static/media/vasam.c7bc6308.svg" alt="" />
               </div>
+            <div className='products_card_para'>
               <h4>داهی</h4>
               <p>نرم افزار معاملات الگوریتمی</p>
+            </div>
           </a>
-          <a href="#"  className="card">
-              <div className='imgbgc'>
-                <div className='img_holder'>
-                  <img src="https://mabnadp.com/_next/static/media/rahavard-novin-3.6a5d286e.svg" alt="" />
-                </div>
+          <a href="#" className="card">
+            <div className='imgbgc'>
+            </div>
+              <div className='img_holder'>
+                <img src="https://mabnadp.com/_next/static/media/rahavard-novin-3.6a5d286e.svg" alt="" />
               </div>
+            <div className='products_card_para'>
               <h4>ره آورد نوین</h4>
               <p>بانک اطلاعاتی و ابزار تحلیل</p>
+            </div>
           </a>
         </div>
       </div>

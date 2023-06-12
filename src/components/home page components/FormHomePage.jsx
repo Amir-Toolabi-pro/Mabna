@@ -10,13 +10,15 @@ const FormHomePage = () => {
           <div className="get_counseling">
             <h3>برای دریافت مشاوره، فرم را پر کنید تا همکاران ما با شما تماس بگیرند:</h3>
             <form action="">
-              <div className="form_home_items">
-                <p>نام و نام خانوادگی</p>
-                <input type="text" placeholder='نام و نام خانوادگی' />
-              </div>
-              <div className="form_home_items">
-                <p>شماره موبایل</p>
-                <input className='getnumber' type="number" placeholder='۰۹۱۲۱۲۳۴۵۶۷' />
+              <div className="name_num">
+                <div className="form_home_items">
+                  <p>نام و نام خانوادگی</p>
+                  <input type="text" placeholder='نام و نام خانوادگی' />
+                </div>
+                <div className="form_home_items">
+                  <p>شماره موبایل</p>
+                  <input className='getnumber' type="number" placeholder='۰۹۱۲۱۲۳۴۵۶۷' />
+                </div>
               </div>
               <div className="form_home_items">
                 <p>نام شرکت</p>
