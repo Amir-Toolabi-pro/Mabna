@@ -59,3 +59,32 @@
   background-color: #47ec7e;
   border: 1px solid #47ec7e;
 }
+
+@media screen and (max-width:550px) {
+
+  .call .call_holder{
+    padding: 40px 0;
+  }
+
+  .call .call_holder h3{
+    width: 95%;
+    margin: 0 auto 30px;
+    font-size: 22px;
+  }
+  .call .call_holder .btn_call_holder{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+  }
+
+  .call .call_holder .btn_call_holder button{
+    width: 100%;
+    padding: 2px 0;
+    font-size: 20px;
+    font-family: yekan;
+    font-weight: 600;
+  }
+}

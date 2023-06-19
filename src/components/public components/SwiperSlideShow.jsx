@@ -9,11 +9,11 @@ const SwiperSlideShow = () => {
       <div className='slidshow_content'>
         <h3>سه دهه همراهی با بزرگان</h3>
         <div className="slid_holder">
-          <img src="https://mabnadp.com/_next/static/media/ArmanEghtesad.6804efb4.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/PetroshimiKhaligFars.5f662c38.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/KargozariBankMeli.c768a6f8.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/BankGardeshgari.52f5cd3f.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/BankDey.fbdc2315.svg" alt="" />
+          <img src="https://mabnadp.com/_next/static/media/ArmanEghtesad.6804efb4.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/AminSahin.94f14201.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/SabadgardanHadaf.dc6ab05d.svg" alt="" />
           <img src="https://mabnadp.com/_next/static/media/NoavaranAmin.2e239612.svg" alt="" />

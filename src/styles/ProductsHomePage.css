@@ -1,24 +1,24 @@
-.products_homepage{
+.products_homepage {
   width: 100%;
 }
 
-.products_homepage h3{
+.products_homepage h3 {
   text-align: center;
   font-size: 32px;
 }
 
-.products_homepage p{
+.products_homepage p {
   text-align: center;
   font-size: 22px;
   margin: 5px 0 25px;
 }
 
-.products_homepage .products_list_button{
+.products_homepage .products_list_button {
   width: 100%;
   margin: 0 0 40px;
 }
 
-.products_homepage .products_list_button ul{
+.products_homepage .products_list_button ul {
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -26,7 +26,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.products_homepage .products_list_button li{
+.products_homepage .products_list_button li {
   width: 180px;
   text-align: center;
   padding: 3px 0;
@@ -35,7 +35,7 @@
   background-color: #f6f6f6;
 }
 
-.products_homepage .products_cards{
+.products_homepage .products_cards {
   width: 99%;
   margin: 0 auto;
   display: flex;
@@ -43,7 +43,7 @@
   gap: 20px;
 }
 
-.products_homepage .products_cards .card{
+.products_homepage .products_cards .card {
   width: 31%;
   padding: 15px 15px 30px;
   box-sizing: border-box;
@@ -52,7 +52,7 @@
   color: #000;
 }
 
-.products_homepage .products_cards .card .imgbgc{
+.products_homepage .products_cards .card .imgbgc {
   width: 100%;
   height: 160px;
   box-sizing: border-box;
@@ -60,7 +60,7 @@
   background-color: #00203b;
 }
 
-.products_homepage .products_cards .card .img_holder{
+.products_homepage .products_cards .card .img_holder {
   height: fit-content;
   width: fit-content;
   display: flex;
@@ -74,18 +74,18 @@
   margin: -60px auto 0;
 }
 
-.products_homepage .products_cards .card .img_holder img{
+.products_homepage .products_cards .card .img_holder img {
   width: 60px;
 }
 
-.products_homepage .products_cards .card h4{
+.products_homepage .products_cards .card h4 {
   margin: 0 0 10px;
   font-size: 20px;
   text-align: center;
   padding: 0;
 }
 
-.products_homepage .products_cards .card p{
+.products_homepage .products_cards .card p {
   font-size: 16px;
   text-align: center;
   margin: 0;
@@ -93,41 +93,36 @@
   line-height: 1.3;
 }
 
-
-
 /* -----------------------responsive------------------- */
 
-
-
-@media screen and (max-width:770px){
-
-  .products_homepage h3{
+@media screen and (max-width: 770px) {
+  .products_homepage h3 {
     text-align: center;
     font-size: 26px;
   }
 
-  .products_homepage p{
+  .products_homepage p {
     font-size: 20px;
     margin: 5px 0 20px;
   }
 
-  .products_homepage .products_list_button ul{
+  .products_homepage .products_list_button ul {
     width: 95%;
     gap: 15px;
   }
 
-  .products_homepage .products_list_button li{
+  .products_homepage .products_list_button li {
     width: fit-content;
     padding: 3px 20px;
     font-size: 15px;
   }
 
-  .products_homepage .products_cards{
+  .products_homepage .products_cards {
     width: 95%;
     flex-direction: column;
   }
 
-  .products_homepage .products_cards .card{
+  .products_homepage .products_cards .card {
     width: 100%;
     height: fit-content;
     padding: 0;
@@ -138,11 +133,11 @@
     padding: 25px;
   }
 
-  .products_homepage .products_cards .card .imgbgc{
+  .products_homepage .products_cards .card .imgbgc {
     display: none;
   }
 
-  .products_homepage .products_cards .card .img_holder{
+  .products_homepage .products_cards .card .img_holder {
     padding: 0;
     box-sizing: border-box;
     border: none;
@@ -151,21 +146,42 @@
     margin: 0;
   }
 
-  .products_homepage .products_cards .card h4{
+  .products_homepage .products_cards .card h4 {
     margin: 0;
     font-size: 18px;
     text-align: right;
     font-weight: 300;
     padding: 0;
   }
-  
-  .products_homepage .products_cards .card p{
+
+  .products_homepage .products_cards .card p {
     font-size: 14px;
     text-align: right;
     margin: 0;
     padding: 0;
     font-weight: 300;
   }
+}
 
+@media screen and (max-width: 450px) {
+  .products_homepage .products_list_button {
+    width: 100%;
+    margin: 0 0 40px;
+    /* overflow-x: scroll; */
+  }
 
+  .products_homepage .products_list_button ul {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* overflow-x: scroll; */
+  }
+
+  .products_homepage .products_list_button li{
+    min-width: 180px;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 5px;
+    font-size: 15px;
+  }
 }

@@ -13,6 +13,12 @@
   width: 100%;
   overflow-x: scroll;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 30px;
+}
+
+@media screen and (max-width:550px) {
+  .slidshow_content h3{
+    font-size: 26px;
+  }
 }

@@ -15,15 +15,15 @@ const MabnaHistory = () => {
           </div>
           <div className="history_list">
             <div className="history_list_item">
-              <span>۳۳+</span>
+              <p className='strong'>۳۳+</p>
               <p>سال اطلاعات بازار سرمایه</p>
             </div>
             <div className="history_list_item">
-              <span>۷۰۰+</span>
+              <p className='strong'>۷۰۰+</p>
               <p>مشتری فعال حقوقی</p>
             </div>
             <div className="history_list_item">
-              <span>۲,۰۰۰,۰۰۰+</span>
+              <p className='strong'>۲,۰۰۰,۰۰۰+</p>
               <p>کاربر حقیقی</p>
             </div>
           </div>

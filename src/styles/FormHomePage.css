@@ -242,3 +242,18 @@
     display: none;
   }
 }
+
+@media screen and (max-width:550px){
+
+  .form_home .form_home_holder .get_counseling h3 {
+    font-size: 20px;
+  }
+
+  .form_home .form_home_holder .get_counseling form .name_num{
+    display: block;
+  }
+
+  .form_home .form_home_holder .get_counseling form .name_num .form_home_items{
+    width: 100%;
+  }
+}

@@ -10,9 +10,17 @@ const HeaderComponent = () => {
     <>
       <header>
         <div className="header_container">
+          <div className='ham_menu' >
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <div className="logo_and_navbar">
             <div className='logo'>
               <img src="https://mabnadp.com/_next/static/media/mabna-logo-40-40.d9957e41.svg" alt="" />
+            </div>
+            <div className='logo_phone'>
+              <img src="https://mabnadp.com/_next/static/media/mabna-logo-text.698569fc.svg" alt="" />
             </div>
             <div className='navbar'>
               <nav>
@@ -39,7 +47,7 @@ const HeaderComponent = () => {
                         ({ isActive }) => {
                           return {
                             color: isActive ? "#00b24a" : "#fff",
-                            borderBottom: isActive ? "2px solid #00b753" : null,
+                            borderBottom: isActive ? " 3px solid #00b753" : null,
                           }
                         }
                       }
@@ -55,7 +63,7 @@ const HeaderComponent = () => {
                         ({ isActive }) => {
                           return {
                             color: isActive ? "#00b24a" : "#fff",
-                            borderBottom: isActive ? "2px solid #00b753" : null,
+                            borderBottom: isActive ? "3px solid #00b753" : null,
                           }
                         }
                       }
@@ -70,7 +78,7 @@ const HeaderComponent = () => {
                         ({ isActive }) => {
                           return {
                             color: isActive ? "#00b24a" : "#fff",
-                            borderBottom: isActive ? "2px solid #00b753" : null,
+                            borderBottom: isActive ? "3px solid #00b753" : null,
                           }
                         }
                       }
@@ -85,7 +93,7 @@ const HeaderComponent = () => {
                         ({ isActive }) => {
                           return {
                             color: isActive ? "#00b24a" : "#fff",
-                            borderBottom: isActive ? "2px solid #00b753" : null,
+                            borderBottom: isActive ? "3px solid #00b753" : null,
                           }
                         }
                       }

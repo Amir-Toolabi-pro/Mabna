@@ -57,6 +57,12 @@
   }
 }
 
+@media screen and (max-width: 1024px){
+  .consultation_request {
+    top: 65px;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .consultation_request .head_para h2 {
     font-size: 34px;
