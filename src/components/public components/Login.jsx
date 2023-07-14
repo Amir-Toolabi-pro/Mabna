@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 import "../../styles/login.css"
@@ -9,9 +9,19 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
   const [getNumber, setGetNumber] = useState("");
+
+  useEffect(()=>{
+    const localNumber = localStorage.getItem('userNumber');
+    if(localNumber){
+      setGetNumber(localNumber)
+    }else{
+      setGetNumber(getNumber)
+    }
+  },[])
+
   let validate = false
   const navigate = useNavigate();
-  if (getNumber !== "" && getNumber.startsWith("09") && getNumber.length == 10) {
+  if (getNumber !== "" && getNumber.startsWith("09") && getNumber.length == 11) {
     validate = true
   }else{
     validate = false
@@ -44,10 +54,11 @@ const Login = () => {
               />
             </div>
             <button
-              disabled={validate ? true : false}
+            style={validate? {background: "green" , cursor:"pointer" } : {backgroundColor: "#bcbcbc" , cursor:"not-allowed"} }
+              disabled = {validate? false : true}
               onClick={() => {
                 localStorage.setItem('userNumber' , getNumber)
-                navigate("/")
+                navigate("/loginPass")
               }}
             >ادامه</button>
           </form>
