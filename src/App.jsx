@@ -1,6 +1,7 @@
 import React from 'react';
 
-import HomePage from './components/home page components/HomaPage';
+import AllComponents from './AllComponents';
+
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-      <HomePage/>
+      <AllComponents/>
     </>
   )
 }

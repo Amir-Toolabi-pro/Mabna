@@ -1,11 +1,14 @@
 import React from 'react';
 //router
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 //style
 import "../../styles/header.css"
 
 
 const HeaderComponent = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <header>
@@ -106,7 +109,11 @@ const HeaderComponent = () => {
             </div>
           </div>
           <div className='btn_login_header'>
-            <button>
+            <button
+              onClick={()=>{
+                navigate("/login")
+              }}
+            >
               ورود
             </button>
           </div>
