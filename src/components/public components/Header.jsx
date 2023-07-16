@@ -5,7 +5,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import "../../styles/header.css"
 
 
-const HeaderComponent = () => {
+const HeaderComponent = ({currentUser}) => {
+
 
   const navigate = useNavigate()
 
@@ -30,7 +31,7 @@ const HeaderComponent = () => {
                 <ul>
                   <li>
                     <NavLink
-                      to={"a"}
+                      to={"/"}
                       style={
                         ({ isActive }) => {
                           return {
@@ -109,13 +110,23 @@ const HeaderComponent = () => {
             </div>
           </div>
           <div className='btn_login_header'>
-            <button
-              onClick={()=>{
-                navigate("/login")
-              }}
-            >
-              ورود
-            </button>
+            {currentUser ?
+              <button>
+                {currentUser.fullname}
+              </button>
+              :
+              <button
+                onClick={() => {
+                  // console.log(getUsers);
+                  // console.log(localName);
+                  // console.log(localNum);
+                  // console.log(currentUser);
+                  navigate("/login")
+                }}
+              >
+                ورود
+              </button>
+            }
           </div>
         </div>
       </header>
