@@ -62,7 +62,7 @@ const HeaderComponent = ({currentUser}) => {
                   </li>
                   <li>
                     <NavLink
-                      to={"c"}
+                      to={"a"}
                       style={
                         ({ isActive }) => {
                           return {
@@ -77,7 +77,7 @@ const HeaderComponent = ({currentUser}) => {
                   </li>
                   <li>
                     <NavLink
-                      to={"d"}
+                      to={"/about-us"}
                       style={
                         ({ isActive }) => {
                           return {

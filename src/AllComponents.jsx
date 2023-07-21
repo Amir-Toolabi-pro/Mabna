@@ -8,6 +8,7 @@ import { Routes , Route } from 'react-router-dom';
 import Login from './components/public components/Login';
 import LoginPassword from './components/public components/loginPassword';
 import WellcomePage from './components/public components/WellcomePage';
+import AboutUs from './components/about us components/AboutUs';
 
 
 const AllComponents = () => {
@@ -15,6 +16,7 @@ const AllComponents = () => {
     <>
     <Routes>
       <Route path='/' element={<HomePage/>} />
+      <Route path='/about-us' element={<AboutUs/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/loginPass' element={<LoginPassword/>} />
       <Route path='/WellcomePage' element={<WellcomePage/>} />
