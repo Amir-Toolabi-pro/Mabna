@@ -8,6 +8,7 @@ import icon from "../../images/icons8-top-32.png"
 import value1 from "../../images/mabna-img1.6470c6e7.jpg"
 import value2 from "../../images/mabna-img3.fa625e1f.jpg"
 import value3 from "../../images/mabna-img2.88cc0a95.jpg"
+import SwipHolders from './SwipHolders';
 
 const AboutUs = () => {
 
@@ -21,6 +22,134 @@ const AboutUs = () => {
       setScroll(false)
     }
   });
+
+  const getholders = [
+    {
+      img: "https://mabnadp.com/_next/static/media/rajabi.2f1abcba.jpg",
+      personName: "مهرداد رجبی",
+      personJob: "مدیر اجرایی",
+      personTalent: "کارشناسی کامپیوتر | ۳۱/۵ درصد سهامداری",
+      talentList: [
+        { listone: "شرکت مشاوران و برنامه‌نویسان نوین ایده - مدیر عامل" },
+        { listone: "شرکت پارس پرتفولیو - مدیر اجرایی" },
+        { listone: "شرکت دنا سهم - مدیر استقرار و واحد پشتیبانی" },
+        { listone: "شرکت سرمایه‌گذاری صبا جهاد - مشاور سرمایه‌گذاری" },
+        { listone: "شرکت پارس فرا اندیشان - مدرس دوره‌های تحلیل تکنیکی" },
+        { listone: "شرکت پارس پویا سهام - مشاور سرمایه‌گذاری و تحلیل‌گر" },
+      ]
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/kiaee.f376ecdf.jpg",
+      personName: "حسین کیایی",
+      perosnJob: "مدیر شبکه و سخت افزار",
+      personTalent: "کارشناسی ریاضی کاربردی | ۰/۵ درصد سهامداری",
+      talentList: [
+        { listone: "شرکت پارس پرتفولیو - مدیر واحد پشتیبانی" },
+        { listone: "شرکت به‌اندیش مترو - مدیر شبکه و سخت‌افزار" },
+      ]
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/roham.93d1f4e4.jpg",
+      personName: "رهام یاوری",
+      personJob: "مدیرعامل و عضو هیئت مدیره",
+      personTalent: "کارشناسی ارشد مدیریت مالی | ۰/۵ درصد سهامداری",
+      talentList: [
+        { listone: "پردازش اطلاعات مالی مبنا - مدیر واحد تحقیق‌وتوسعه" },
+        { listone: "شرکت نگین سبز برنا - مدیر مالی" },
+      ]
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/farahabadi.472fe024.jpg",
+      personName: "مهرداد فرح آبادی",
+      personJob: "عضو هیئت مدیره",
+      personTalent: "دکتری مدیریت مالی | ۰/۵ درصد سهامداری",
+      talentList: [
+        { listone: "شرکت رتبه‌بندی برهان - مدیر خدمات رتبه‌بندی" },
+        { listone: "سازمان بورس و اوراق بهادار - رئیس بازرسی نهادهای مالی" },
+        { listone: "بانک پارسیان - امور شرکت‌ها و مجامع" },
+        { listone: "مؤسسه حسابرسی بهراد مشار - حسابرس" },
+      ]
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/kian.ee619049.jpg",
+      personName: "گروه مالی کیان(سهامی عام)",
+      personTalent: "۶۶/۸ درصد سهامداری",
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/parto-kian.7798db5a.png",
+      personName: "مشاور سرمایه گذاری پرتو آفتاب کیان",
+      personTalent: "۰/۲ درصد سهامداری",
+    },
+  ]
+
+
+  const getLicensingAgents = [
+    {
+      img: "https://mabnadp.com/_next/static/media/maleki.b4342a9d.jpg",
+      personName: "محسن ملکی",
+      personJob: "حسابدار",
+      personTalent: "کارشناسی حسابداری",
+      license:"نماینده مجوز"
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/kiaee.f376ecdf.jpg",
+      personName: "حسین کیایی",
+      personJob: "مدیر شبکه و سخت‌افزار",
+      personTalent: "کارشناسی ریاضی کاربردی|۰/۵ درصد سهامداری",
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/mohajer.241a3ae7.jpg",
+      personName: "محمد آخوندزاده مهاجر",
+      personJob: "مدیر ارشد توسعه نرم‌افزار",
+      personTalent: "کارشناسی مهندسی نرم‌افزار",
+      license:"نماینده مجوز"
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/ashkan.7ba071f2.jpg",
+      personName: "اشکان نورزاده",
+      personJob: "مدیر ارشد فناوری",
+      personTalent: "کارشناسی مهندسی نرم‌افزار",
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/rajabi.2f1abcba.jpg",
+      personName: "مهرداد رجبی",
+      personJob: "مدیر اجرایی",
+      personTalent: "کارشناسی کامپیوتر|۳۵ درصد سهامداری",
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/roham.93d1f4e4.jpg",
+      personName: "رهام یاوری",
+      personJob: "مدیرعامل و عضو هیئت مدیره",
+      personTalent: "کارشناسی ارشد مدیریت مالی|۰/۵ درصد سهامداری",
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/bekran.81da69ee.jpg",
+      personName: "فرید بکران",
+      personJob: "کارشناس توسعه نرم افزار",
+      personTalent: "کارشناسی علوم کامپیوتر",
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/samira.1ccc3825.jpg",
+      personName: "سمیرا موسوی",
+      personJob: "کارشناس مسئول بازبینی اطلاعات",
+      personTalent: "کارشناسی حسابداری",
+      license:"نماینده مجوز"
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/parisa.2117393d.jpg",
+      personName: "فاطمه شاه‌بابا",
+      personJob: "متصدی جمع‌آوری اطلاعات",
+      personTalent: "کارشناسی علوم اقتصادی",
+      license:"نماینده مجوز"
+    },
+    {
+      img: "https://mabnadp.com/_next/static/media/parastoo_moosavi.bc5b9b45.jpg",
+      personName: "پرستو موسوی",
+      personJob: "بایگان",
+      personTalent: "کارشناسی روانشناسی بالینی",
+      license:"نماینده مجوز"
+    },
+  ]
 
 
 
@@ -129,6 +258,8 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
+        <SwipHolders getholders={getholders} />
+        <SwipHolders getlicense={getLicensingAgents} />
         <SwiperSlideShow />
         <Footer />
         {getScroll ?
