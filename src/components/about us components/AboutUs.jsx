@@ -275,6 +275,7 @@ const AboutUs = () => {
           null
         }
       </div>
+      
     </>
   );
 }
