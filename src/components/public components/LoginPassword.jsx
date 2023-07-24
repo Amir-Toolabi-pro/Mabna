@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-import "../../styles/login.css"
+import style from "../../styles/login.module.css"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -23,9 +23,9 @@ const LoginPassword = () => {
 
   return (
     <>
-      <div className="login_content">
-        <div className="login_get_num">
-          <div className="login_icon">
+      <div className={style.login_content}>
+        <div className={style.login_get_num}>
+          <div className={style.login_icon}>
             <img src="https://my.mabnadp.com/_next/static/media/logo.5421f771.svg" alt="" />
             <p>سامانه امور مشتریان مبنا</p>
           </div>
@@ -33,7 +33,7 @@ const LoginPassword = () => {
             <span>
               ثبت نام / ورود
             </span>
-            <div className='inputname_holder' >
+            <div className={style.inputname_holder}>
               <span>نام و نام خانوادگی خود را وارد کنید</span>
               <input
                 type="text"
@@ -45,7 +45,7 @@ const LoginPassword = () => {
                 placeholder='به طور مثال امیرحسین طولابی'
               />
             </div>
-            <div className='inputpass_holder' >
+            <div className={style.inputpass_holder}>
               <span>رمز عبور جدید</span>
               <input
                 type={checkPass ? "text" : "password"}
@@ -57,7 +57,7 @@ const LoginPassword = () => {
                 placeholder='********'
               />
             </div>
-            <div className='inputpass_holder' >
+            <div className={style.inputpass_holder} >
               <span>رمز عبور را مجدد وارد نمایید</span>
               <input
                 type={checkPass ? "text" : "password"}
@@ -68,7 +68,7 @@ const LoginPassword = () => {
                 placeholder='********'
               />
             </div>
-            <div className="check">
+            <div className={style.check}>
               <p>
                 نمایش پسورد 
                 <input
@@ -94,8 +94,7 @@ const LoginPassword = () => {
             >ورود</button>
           </form>
         </div>
-
-        <div className="login_bgi">
+        <div className={style.login_bgi}>
 
         </div>
       </div>

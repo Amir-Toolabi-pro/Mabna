@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-import "../../styles/WellcomePage.css"
+//style
+import style from "../../styles/WellcomePage.module.css"
+
+//rputer
 import { Link, useNavigate } from 'react-router-dom';
+
+//axios
 import axios from 'axios';
 
 const WellcomePage = () => {
@@ -25,9 +30,9 @@ const WellcomePage = () => {
 
   return (
     <>
-      <div className='wllcome_container' >
+      <div className={style.wllcome_container}>
         <p>من {users.fullname} هستم با شماره تلفن: {users.phone}</p>
-        <p className='agree' >
+        <p className={style.agree} >
           مشخصات فوق را تایید میکنید؟
           <input type="checkbox"
             onClick={(e) => {
@@ -40,7 +45,7 @@ const WellcomePage = () => {
           />
           <Link to={"/"}>بیخیال</Link>
         </p>
-        <div className='wellcome_btn'>
+        <div className={style.wellcome_btn}>
           <button
             style={validate ? { cursor: "pointer" } : { cursor: "not-allowed" }}
             disabled={validate ? false : true}

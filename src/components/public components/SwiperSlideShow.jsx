@@ -1,9 +1,8 @@
 import React from 'react';
 
-// import Slider from "react-slick";
 
-
-import "../../styles/SwiperSlideShow.css"
+//style
+import style from "../../styles/SwiperSlideShow.module.css"
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
@@ -12,36 +11,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   Pagination, Navigation, Autoplay
 } from 'swiper/core';
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
-
-
 // SwiperCore.use([Pagination, Navigation, Autoplay]);
 SwiperCore.use([Autoplay]);
 const SwiperSlideShow = () => {
 
   return (
     <>
-
-
-
-
-
-      <div className='slidshow_content'>
+      <div className={style.slidshow_content}>
         <h3>سه دهه همراهی با بزرگان</h3>
-        <div className="slid_holder" dir='rtl'>
-
+        <div className={style.slid_holder}>
           <Swiper
             slidesPerView={7}
             spaceBetween={30}
             loop={true}
             autoplay={{ delay: 0 }}
             speed={3000}
-            // pagination={{
-            //   "clickable": true
-            // }}
-            // dir='rtl'
             // navigation={{
             //   nextEl: '.next',
             //   prevEl: '.prev',
@@ -103,10 +87,7 @@ const SwiperSlideShow = () => {
               <img src="https://mabnadp.com/_next/static/media/KargozariBankMeli.c768a6f8.svg" alt="" />
             </SwiperSlide>
           </Swiper>
-          {/* <button className='next'>بعدی</button>
-            <button className='prev'>قبلی</button> */}
         </div>
-
       </div>
     </>
   );

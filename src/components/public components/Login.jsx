@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
+//style
+import style from "../../styles/login.module.css"
 
-import "../../styles/login.css"
+//router
 import { useNavigate } from 'react-router-dom';
 
 
@@ -30,9 +32,9 @@ const Login = () => {
 
   return (
     <>
-      <div className="login_content">
-        <div className="login_get_num">
-          <div className="login_icon">
+      <div className={style.login_content}>
+        <div className={style.login_get_num}>
+          <div className={style.login_icon}>
             <img src="https://my.mabnadp.com/_next/static/media/logo.5421f771.svg" alt="" />
             <p>سامانه امور مشتریان مبنا</p>
           </div>
@@ -40,7 +42,7 @@ const Login = () => {
             <span>
               ثبت نام / ورود
             </span>
-            <div className='inputnum_holder' >
+            <div className={style.inputnum_holder} >
               <span>شماره موبایل خود را وارد کنید.</span>
               <input
                 value={getNumber}
@@ -64,7 +66,7 @@ const Login = () => {
           </form>
         </div>
 
-        <div className="login_bgi">
+        <div className={style.login_bgi}>
 
         </div>
       </div>

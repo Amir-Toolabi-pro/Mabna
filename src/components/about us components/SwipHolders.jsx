@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 
-import "../../styles/SwipHolders.css"
+//style
+import style from "../../styles/SwipHolders.module.css"
 
+//swiper
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
 import "swiper/components/controller/controller.min.css"
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import SwiperCore, { Navigation, EffectCoverflow, Controller, Pagination, EffectFade } from 'swiper/core';
 SwiperCore.use([EffectCoverflow, Navigation, Controller, EffectFade]);
 
+//bootstrap
 import {ChevronLeft , ChevronRight} from "react-bootstrap-icons"
 
+//img
 import circle from "../../images/icons8-circle-16.png"
 import icon from "../../images/icons8-top-32.png"
 
@@ -23,9 +26,9 @@ const SwipHolders = ({ getholders, getlicense }) => {
 
   return (
     <>
-      <section className='swipholders_container' >
+      <section className={style.swipholders_container} >
         <h3>{getholders ? "سهامداران و اعضای هیئت مدیره" : "تیم مبنا و نمایندگان مجوز"}</h3>
-        <div className='swipholders_container_holder' >
+        <div className={style.swipholders_container_holder} >
           <Swiper
             slidesPerView={5}
             speed={500}
@@ -34,8 +37,8 @@ const SwipHolders = ({ getholders, getlicense }) => {
             centeredSlides={true}
             effect='coverflow'
             navigation={{
-              nextEl: '.next',
-              prevEl: '.prev',
+              nextEl: style.next,
+              prevEl: style.prev,
             }}
             coverflowEffect={{
               rotate: 0,
@@ -52,7 +55,7 @@ const SwipHolders = ({ getholders, getlicense }) => {
                 if (person.img) {
                   return (
                     <SwiperSlide>
-                      <div className="swipholders_container_holder_card">
+                      <div className={style.swipholders_container_holder_card}>
                         <img src={person.img} alt="" />
                       </div>
                     </SwiperSlide>
@@ -63,7 +66,7 @@ const SwipHolders = ({ getholders, getlicense }) => {
                 if (person.img) {
                   return (
                     <SwiperSlide>
-                      <div className="swipholders_container_holder_card">
+                      <div className={style.swipholders_container_holder_card}>
                         <img src={person.img} alt="" />
                       </div>
                     </SwiperSlide>
@@ -73,7 +76,7 @@ const SwipHolders = ({ getholders, getlicense }) => {
             }
 
           </Swiper>
-          <div className='thumb'>
+          <div className={style.thumb}>
             <Swiper
               slidesPerView={1}
               grabCursor={false}
@@ -87,16 +90,16 @@ const SwipHolders = ({ getholders, getlicense }) => {
               modules={[Controller]}
               onSwiper={setControlledSwiper}
               draggable={false}
-              className="thumbswiper"
+              className={style.thumbswiper}
             >
               {getholders ? getholders.map((person) => {
                 return (
                   <SwiperSlide>
-                    <p className='SwipHolders_name' >{person.personName}</p>
-                    {person.personJob ? <p className='SwipHolders_job' >{person.personJob}</p> : null}
-                    {person.personTalent ? <p className="SwipHolders_talent">{person.personTalent}</p> : null}
+                    <p className={style.SwipHolders_name} >{person.personName}</p>
+                    {person.personJob ? <p className={style.SwipHolders_job} >{person.personJob}</p> : null}
+                    {person.personTalent ? <p className={style.SwipHolders_talent}>{person.personTalent}</p> : null}
                     {person.talentList ?
-                      <ul className="SwipHolders_talent_list">
+                      <ul className={style.SwipHolders_talent_list}>
                         {person.talentList.map((list) => {
                           return (
                             <li>
@@ -113,12 +116,12 @@ const SwipHolders = ({ getholders, getlicense }) => {
                 getlicense.map((person) => {
                   return (
                     <SwiperSlide>
-                      <p className='SwipHolders_name' >{person.personName}</p>
-                      {person.personJob ? <p className='SwipHolders_job' >{person.personJob}</p> : null}
-                      {person.personTalent ? <p className="SwipHolders_talent">{person.personTalent}</p> : null}
-                      {person.license ? <p className="SwipHolders_license">{person.license}</p> : null}
+                      <p className={style.SwipHolders_name} >{person.personName}</p>
+                      {person.personJob ? <p className={style.SwipHolders_job} >{person.personJob}</p> : null}
+                      {person.personTalent ? <p className={style.SwipHolders_talent}>{person.personTalent}</p> : null}
+                      {person.license ? <p className={style.SwipHolders_license}>{person.license}</p> : null}
                       {person.talentList ?
-                        <ul className="SwipHolders_talent_list">
+                        <ul className={style.SwipHolders_talent_list}>
                           {person.talentList.map((list) => {
                             return (
                               <li>
@@ -134,11 +137,11 @@ const SwipHolders = ({ getholders, getlicense }) => {
                 })
               }
             </Swiper>
-            <button className='prev'>
-              <ChevronRight className='prev_icon' />
+            <button className={style.prev}>
+              <ChevronRight className={style.prev_icon} />
             </button>
-            <button className='next'>
-              <ChevronLeft className='next_icon' />
+            <button className={style.next}>
+              <ChevronLeft className={style.next_icon} />
             </button>
           </div>
         </div>

@@ -1,0 +1,21 @@
+.accordion_about_us{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.accordion_about_us .accordion_about_us_holder{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.accordion_about_us .accordion_about_us_holder h3{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.accordion_about_us .accordion_about_us_holder .current_accordion{
+  border: none;
+  width: 100%;
+  background-color: blueviolet;
+}

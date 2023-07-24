@@ -1,32 +1,33 @@
 import React from 'react';
+
 //router
 import { NavLink, useNavigate } from 'react-router-dom';
 //style
-import "../../styles/header.css"
+import style from "../../styles/header.module.css"
 
 
 const HeaderComponent = ({currentUser}) => {
 
-
   const navigate = useNavigate()
+
 
   return (
     <>
       <header>
-        <div className="header_container">
-          <div className='ham_menu' >
+        <div className={style.header_container}>
+          <div className={style.ham_menu}>
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <div className="logo_and_navbar">
-            <div className='logo'>
+          <div className={style.logo_and_navbar}>
+            <div className={style.logo}>
               <img src="https://mabnadp.com/_next/static/media/mabna-logo-40-40.d9957e41.svg" alt="" />
             </div>
-            <div className='logo_phone'>
+            <div className={style.logo_phone}>
               <img src="https://mabnadp.com/_next/static/media/mabna-logo-text.698569fc.svg" alt="" />
             </div>
-            <div className='navbar'>
+            <div className={style.navbar}>
               <nav>
                 <ul>
                   <li>
@@ -109,7 +110,7 @@ const HeaderComponent = ({currentUser}) => {
               </nav>
             </div>
           </div>
-          <div className='btn_login_header'>
+          <div className={style.btn_login_header}>
             {currentUser ?
               <button>
                 {currentUser.fullname}
