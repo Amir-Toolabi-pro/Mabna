@@ -2,7 +2,7 @@ import React from 'react';
 
 // //Bootstrap
 // import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Accordion, Col, Container, Row } from 'react-bootstrap';
+// import { Accordion} from 'react-bootstrap';
 
 
 
@@ -20,15 +20,15 @@ const AccordionAboutUs = () => {
             اطلاعات تکمیلی
           </h3>
            {/* <Accordion className='current_accordion' >
-             <Accordion.Item eventKey="0">
-               <Accordion.Header>Accordion Item #1</Accordion.Header>
-               <Accordion.Body>
+             <Accordion.Item  className='current_accordion_itme' eventKey="0">
+               <Accordion.Header className='current_accordion_itme_head'>Accordion Item #1</Accordion.Header>
+               <Accordion.Body className='current_accordion_itme_body'>
                  First Item
                </Accordion.Body>
              </Accordion.Item>
-             <Accordion.Item eventKey="1">
-               <Accordion.Header>Accordion Item #2</Accordion.Header>
-               <Accordion.Body>
+             <Accordion.Item  className='current_accordion_itme' eventKey="1">
+               <Accordion.Header className='current_accordion_itme_head'>Accordion Item #2</Accordion.Header>
+               <Accordion.Body className='current_accordion_itme_body'>
                  Second Item
                </Accordion.Body>
              </Accordion.Item>
