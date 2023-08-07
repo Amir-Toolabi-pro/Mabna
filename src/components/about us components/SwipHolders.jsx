@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 //style
 import style from "../../styles/SwipHolders.module.css"
@@ -13,13 +13,43 @@ import SwiperCore, { Navigation, EffectCoverflow, Controller, Pagination, Effect
 SwiperCore.use([EffectCoverflow, Navigation, Controller, EffectFade]);
 
 //bootstrap
-import {ChevronLeft , ChevronRight} from "react-bootstrap-icons"
+import { ChevronLeft, ChevronRight } from "react-bootstrap-icons"
 
 //img
 import circle from "../../images/icons8-circle-16.png"
 
 const SwipHolders = ({ getholders, getlicense }) => {
+
   const [controlledSwiper, setControlledSwiper] = useState(null);
+  const [getSize, setSize] = useState();
+
+  const swiperKeys = {
+    slidesPerView: 5,
+    speed: 500,
+    grabCursor: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    effect: 'coverflow',
+    navigation: {
+      nextEl: ".thumb_btn_next",
+      prevEl: ".thumb_btn_prev",
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 10,
+      modifier: 4,
+      depth: 180,
+      slideShadows: true
+    },
+    controller: { control: controlledSwiper },
+  }
+
+  // const resize = window.addEventListener('resize', (event) => {
+  //   setSize(document.body.offsetWidth);
+  //   if (getSize <= 770) {
+  //     swiperKeys.coverflowEffect.modifier = 2
+  //   }
+  // })
 
 
 
@@ -29,31 +59,14 @@ const SwipHolders = ({ getholders, getlicense }) => {
         <h3>{getholders ? "سهامداران و اعضای هیئت مدیره" : "تیم مبنا و نمایندگان مجوز"}</h3>
         <div className={style.swipholders_container_holder} >
           <Swiper
-            slidesPerView={5}
-            speed={500}
-            grabCursor={true}
-            spaceBetween={0}
-            centeredSlides={true}
-            effect='coverflow'
-            navigation={{
-              nextEl: ".thumb_btn_next",
-              prevEl: ".thumb_btn_prev",
-            }}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 200,
-              modifier: 5,
-              slideShadows: true
-            }}
-            controller={{ control: controlledSwiper }}
+            {...swiperKeys}
             className="myswiper"
           >
             {getholders ?
               getholders.map((person) => {
                 if (person.img) {
                   return (
-                    <SwiperSlide>
+                    <SwiperSlide className="myswiper_slide" >
                       <div className="swipholders_container_holder_card">
                         <img src={person.img} alt="" />
                       </div>
@@ -64,7 +77,7 @@ const SwipHolders = ({ getholders, getlicense }) => {
               getlicense.map((person) => {
                 if (person.img) {
                   return (
-                    <SwiperSlide>
+                    <SwiperSlide className="myswiper_slide" >
                       <div className="swipholders_container_holder_card">
                         <img src={person.img} alt="" />
                       </div>

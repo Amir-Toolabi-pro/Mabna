@@ -34,22 +34,43 @@ body {
 
 .myswiper {
   text-align: center;
+  width: 100%;
+}
+
+.myswiper .myswiper_slide{
+  width: 100%;
+  box-shadow: none;
+}
+
+.myswiper .myswiper_slide .swipholders_container_holder_card{
+  width: 100%;
+}
+
+.myswiper .myswiper_slide .swipholders_container_holder_card img{
+  width: 100%;
+  object-fit: cover;
 }
 
 .thumb {
-  width: 50%;
+  width: 100%;
   margin: 30px auto 0;
   position: relative;
-  text-align: center;
+  /* text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .thumbswiper {
-  text-align: center;
+  /* text-align: center; */
   box-shadow: none;
 }
 
 .thumb .SwipHolders_name {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
 }
 .thumb .SwipHolders_job {
@@ -93,16 +114,15 @@ body {
   z-index: 5;
   outline: none;
   transition: all ease 0.3s;
+  position: absolute;
 }
 
 .thumb .thumb_btn_next {
-  position: absolute;
-  left: 0;
+  left: 20%;
   top: 50px;
 }
 .thumb .thumb_btn_prev {
-  position: absolute;
-  right: 0;
+  right: 20%;
   top: 50px;
 }
 
@@ -142,3 +162,22 @@ body {
   position: absolute;
   left: 0;
 }
+
+/* @media screen and (max-width:770px){
+  
+  .myswiper .myswiper_slide .swipholders_container_holder_card{
+    width: 160%;
+  }
+  
+  .myswiper .myswiper_slide .swipholders_container_holder_card img{
+    width: 100%;
+    object-fit: cover;
+  }
+} */
+
+/* @media screen and (max-width:990px){
+  .myswiper {
+    box-sizing: border-box;
+    left: 3%;
+  }
+} */

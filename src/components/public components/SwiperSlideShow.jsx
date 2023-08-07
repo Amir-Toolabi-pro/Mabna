@@ -26,10 +26,29 @@ const SwiperSlideShow = () => {
             loop={true}
             autoplay={{ delay: 0 }}
             speed={3000}
-            // navigation={{
-            //   nextEl: '.next',
-            //   prevEl: '.prev',
-            // }}
+            breakpoints={{
+              950: {
+                width: 950,
+                slidesPerView: 6,
+              },
+              700: {
+                width: 700,
+                slidesPerView: 5,
+              },
+              600: {
+                width: 600,
+                slidesPerView: 4,
+              },
+              400: {
+                width: 400,
+                slidesPerView: 3,
+              },
+
+              300: {
+                width: 300,
+                slidesPerView: 2.5,
+              },
+            }}
             className="mySwiper"
           >
             <SwiperSlide>

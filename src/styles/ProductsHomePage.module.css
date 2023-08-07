@@ -173,7 +173,6 @@
   .products_homepage .products_list_button ul {
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
     /* overflow-x: scroll; */
   }
 

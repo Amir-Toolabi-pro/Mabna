@@ -96,7 +96,7 @@ const AboutUs = () => {
       personName: "محسن ملکی",
       personJob: "حسابدار",
       personTalent: "کارشناسی حسابداری",
-      license:"نماینده مجوز"
+      license: "نماینده مجوز"
     },
     {
       img: "https://mabnadp.com/_next/static/media/kiaee.f376ecdf.jpg",
@@ -109,7 +109,7 @@ const AboutUs = () => {
       personName: "محمد آخوندزاده مهاجر",
       personJob: "مدیر ارشد توسعه نرم‌افزار",
       personTalent: "کارشناسی مهندسی نرم‌افزار",
-      license:"نماینده مجوز"
+      license: "نماینده مجوز"
     },
     {
       img: "https://mabnadp.com/_next/static/media/ashkan.7ba071f2.jpg",
@@ -140,21 +140,21 @@ const AboutUs = () => {
       personName: "سمیرا موسوی",
       personJob: "کارشناس مسئول بازبینی اطلاعات",
       personTalent: "کارشناسی حسابداری",
-      license:"نماینده مجوز"
+      license: "نماینده مجوز"
     },
     {
       img: "https://mabnadp.com/_next/static/media/parisa.2117393d.jpg",
       personName: "فاطمه شاه‌بابا",
       personJob: "متصدی جمع‌آوری اطلاعات",
       personTalent: "کارشناسی علوم اقتصادی",
-      license:"نماینده مجوز"
+      license: "نماینده مجوز"
     },
     {
       img: "https://mabnadp.com/_next/static/media/parastoo_moosavi.bc5b9b45.jpg",
       personName: "پرستو موسوی",
       personJob: "بایگان",
       personTalent: "کارشناسی روانشناسی بالینی",
-      license:"نماینده مجوز"
+      license: "نماینده مجوز"
     },
   ]
 
@@ -186,8 +186,9 @@ const AboutUs = () => {
           </div>
           <div className={style.about_direction_mabna_img_holder}>
             <img className={style.child1} src="https://mabnadp.com/_next/static/media/infography.c68c5dc2.jpg" alt="" />
-            <img className={style.child2} src="https://mabnadp.com/_next/static/media/infography.c68c5dc2.jpg" alt="" />
-            <img className={style.child3} src="https://mabnadp.com/_next/static/media/infography.c68c5dc2.jpg" alt="" />
+            <img className={style.child2} src="https://mabnadp.com/_next/static/media/infography-lg.f42deae9.jpg" alt="" />
+            <img className={style.child3} src="https://mabnadp.com/_next/static/media/infography-md.522cc30c.jpg" alt="" />
+            <img className={style.child4} src="https://mabnadp.com/_next/static/media/infography-sm.4dbbe933.jpg" alt="" />
           </div>
         </section>
         <section className={style.about_mabna_value}>
@@ -199,6 +200,13 @@ const AboutUs = () => {
               <img className={style.img_value1} src={value1} alt="" />
               <img className={style.img_value2} src={value2} alt="" />
               <img className={style.img_value3} src={value3} alt="" />
+            </div>
+            <div className={style.about_mabna_value_holder_img_responsive}>
+              <div>
+                <img src={value1} alt="" />
+                <img src={value3} alt="" />
+              </div>
+              <img className={style.img_value_responsive} src={value2} alt="" />
             </div>
             <div className={style.about_mabna_value_holder_para} >
               <div className={style.responsibility}>
@@ -267,7 +275,7 @@ const AboutUs = () => {
         </section>
         <SwipHolders getholders={getholders} />
         <SwipHolders getlicense={getLicensingAgents} />
-        <AccordionAboutUs/>
+        <AccordionAboutUs />
         <SwiperSlideShow />
         <Footer />
         {getScroll ?

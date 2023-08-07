@@ -5,6 +5,7 @@ header{
   background-color: #00203b;
   position: fixed;
   top: 0;
+  right: 0 !important;
   z-index: 9;
 }
 

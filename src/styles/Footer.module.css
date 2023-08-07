@@ -137,12 +137,14 @@ footer .foot_footer{
 
 footer .foot_footer p{
   position: relative;
+  box-sizing: border-box;
+  padding-right: 30px;
 }
 
 footer .foot_footer p svg{
   position: absolute;
-  right: -30px;
-  bottom: -1px;
+  right: 0px;
+  bottom: 0px;
 }
 
 @media screen and (max-width:900px){
@@ -185,7 +187,6 @@ footer .foot_footer p svg{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background-color: #00b24a;
     width: 50%;
   }
   
@@ -199,10 +200,22 @@ footer .foot_footer p svg{
     width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: #00b24a;
   }
   footer .footer_body .contact_footer .simbol_footer a{
     width: 60px;
+  }
+
+}
+
+@media screen and (max-width:480px){
+
+  footer .foot_footer p{
+    font-size: 10px;
+    padding-right: 23px;
+  }
+
+  footer .foot_footer svg{
+    width: 20px;
   }
 
 }
