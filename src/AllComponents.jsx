@@ -9,6 +9,7 @@ import Login from './components/public components/Login';
 import LoginPassword from './components/public components/loginPassword';
 import WellcomePage from './components/public components/WellcomePage';
 import AboutUs from './components/about us components/AboutUs';
+import ContactUs from './components/contact us/ContactUs';
 
 
 const AllComponents = () => {
@@ -16,7 +17,8 @@ const AllComponents = () => {
     <>
     <Routes>
       <Route path='/' element={<HomePage/>} />
-      <Route path='/about-us' element={<AboutUs/>} />
+      <Route path='/about' element={<AboutUs/>} />
+      <Route path='/contact' element={<ContactUs/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/loginPass' element={<LoginPassword/>} />
       <Route path='/WellcomePage' element={<WellcomePage/>} />
