@@ -5,11 +5,11 @@ import { useLocation } from 'react-router-dom';
 
 const FormHomePage = () => {
 
-  const [texterNum , setTexterNum] = useState("۰")
-  const [texterTxt , setTexterTxt] = useState(null)
+  const [texterNum, setTexterNum] = useState("۰")
+  const [texterTxt, setTexterTxt] = useState(null)
+  const [reserv, setReserv] = useState(false)
 
   const search = useLocation()
-  console.log(search);
 
   return (
     <>
@@ -47,7 +47,7 @@ const FormHomePage = () => {
                   <textarea
                     placeholder='پیامتان را اینجا بنویسید'
                     value={texterTxt}
-                    onChange={(e)=>{
+                    onChange={(e) => {
                       setTexterTxt(e.target.value)
                       setTexterNum(texterTxt.length)
                     }}
@@ -60,14 +60,28 @@ const FormHomePage = () => {
                 :
                 <div className={style.form_home_items}>
                   <p>انتخاب زمان مناسب برای تماس با شما</p>
-                  <div>
+                  <div
+                    className={style.form_home_items_drop_down}
+                    onclick={() => {
+                      setReserv(true)
+                    }}
+                  >
                     <span>زمان مورد‌نظر خود را انتخاب کنید.</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="#BCBCBC" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </div>
+                  <div
+                    className={style.reservation_data}
+                  >
+                    please reserv a time to deate
                   </div>
                 </div>
               }
               <div className={style.get_counseling_btn}>
-                <button>ارسال</button>
+                <button
+                disabled
+                >
+                  ارسال
+                </button>
               </div>
             </form>
           </div>

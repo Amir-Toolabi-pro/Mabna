@@ -6,7 +6,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import style from "../../styles/header.module.css"
 
 
-const HeaderComponent = ({currentUser}) => {
+const HeaderComponent = ({ currentUser }) => {
 
   const navigate = useNavigate()
 
@@ -56,9 +56,12 @@ const HeaderComponent = ({currentUser}) => {
                           }
                         }
                       }
+                      onClick={(e) => {
+                        e.preventDefault()
+                      }}
                     >
                       محصولات
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      <svg className={style.head_svg} width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                     </NavLink>
                   </li>
                   <li>
@@ -118,16 +121,119 @@ const HeaderComponent = ({currentUser}) => {
               :
               <button
                 onClick={() => {
-                  // console.log(getUsers);
-                  // console.log(localName);
-                  // console.log(localNum);
-                  // console.log(currentUser);
                   navigate("/login")
                 }}
               >
                 ورود
               </button>
             }
+          </div>
+        </div>
+        <div className={style.products_hover_show} >
+          <div className={style.products_hover_show_container} >
+            <div className={style.products_hover_show_culmn_holder}>
+              <div className={style.products_hover_show_culmn_holder_child_one}>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/rahavard365.f6f28db5.svg" alt="" />
+                      ره آورد
+                    </h5>
+                    <p>مرجع اطلاعات و تحلیل بازار های مالی</p>
+                  </div>
+                </div>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/sabadyar.95382236.svg" alt="" />
+                      سبدیار
+                    </h5>
+                    <p>
+                      مدیریت پرتفوی برای سبدگردانی‌ها
+                    </p>
+                  </div>
+                </div>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/dohi.987f4ad5.svg" alt="" />
+                      داهی
+                    </h5>
+                    <p>
+                      نرم‌افزار معاملات الگوریتمی
+                    </p>
+                  </div>
+                </div>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/vasam.c7bc6308.svg" alt="" />
+                      وسام
+                    </h5>
+                    <p>
+                      وب‌سرویس اطلاعات مالی و معاملاتی
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.products_hover_show_culmn_holder_child_two}>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/yekan.f7afcfc6.svg" alt="" />
+                      یکان
+                    </h5>
+                    <p>
+                      مدیریت و حسابداری صندوق‌های سرمایه‌گذاری
+                    </p>
+                  </div>
+                </div>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/emax.cc0216f4.svg" alt="" />
+                      ایمکس
+                    </h5>
+                    <p>
+                      سامانه معاملاتی برخط کارگزاری‌های بورس
+                    </p>
+                  </div>
+                </div>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/rahavard-academy.f6f28db5.svg" alt="" />
+                      ره آورد آکادمی
+                    </h5>
+                    <p>
+                      سامانه آموزش بازارهای مالی
+                    </p>
+                  </div>
+                </div>
+                <div className={style.child}>
+                  <div>
+                    <h5>
+                      <img src="https://mabnadp.com/_next/static/media/rahavard-novin-3.6a5d286e.svg" alt="" />
+                      ره آورد نوین
+                    </h5>
+                    <p>
+                      بانک اطلاعاتی و ابزار تحلیل
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={style.products_hover_show_alone_list}>
+              <div>
+                <h5>
+                  <img src="https://mabnadp.com/_next/static/media/rahavard-novin-3.6a5d286e.svg" alt="" />
+                  ره آورد نوین
+                </h5>
+                <p>
+                  بانک اطلاعاتی و ابزار تحلیل
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </header>

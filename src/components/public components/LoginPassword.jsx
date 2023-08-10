@@ -40,7 +40,7 @@ const LoginPassword = () => {
                 value={getName}
                 onChange={(event) => {
                   setGetName(event.target.value);
-                  console.log(getName);
+                  // console.log(getName);
                 }}
                 placeholder='به طور مثال امیرحسین طولابی'
               />
@@ -52,7 +52,7 @@ const LoginPassword = () => {
                 value={getPass}
                 onChange={(event) => {
                   setGetPass(event.target.value);
-                  console.log(getPass);
+                  // console.log(getPass);
                 }}
                 placeholder='********'
               />

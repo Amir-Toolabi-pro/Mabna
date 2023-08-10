@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 
 .form_home .form_home_holder .get_counseling {
@@ -31,6 +32,7 @@
   flex-direction: column;
   margin: 0 0 30px;
   position: relative;
+  z-index: 4;
 }
 
 .form_home .form_home_holder .get_counseling form .form_home_items:hover {
@@ -157,23 +159,39 @@
   -moz-appearance: textfield;
 }
 
-.form_home .form_home_holder .get_counseling form .form_home_items div {
+.form_home .form_home_holder .get_counseling form .form_home_items .form_home_items_drop_down {
   width: 100%;
-  padding: 5px 10px;
+  height: 40px;
+  padding: 0 10px;
   box-sizing: border-box;
   color: #bcbcbc;
   outline: none;
   border: 1px solid #bcbcbc;
   border-radius: 8px;
   transition: all ease 0.3s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   cursor: default;
 }
 
-.form_home .form_home_holder .get_counseling form .form_home_items div span{
+.form_home .form_home_holder .get_counseling form .form_home_items .form_home_items_drop_down svg {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items .form_home_items_drop_down span{
   font-size: 15px;
+  position: absolute;
+  right: 5px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.form_home .form_home_holder .get_counseling form .form_home_items .reservation_data{
+  position: absolute;
+  background-color: #bcbcbc;
+  bottom: -35px;
 }
 
 .form_home .form_home_holder .get_counseling form .get_counseling_btn {

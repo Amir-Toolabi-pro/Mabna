@@ -50,7 +50,7 @@ const WellcomePage = () => {
             style={validate ? { cursor: "pointer" } : { cursor: "not-allowed" }}
             disabled={validate ? false : true}
             onClick={() => {
-              console.log(users);
+              // console.log(users);
               axios.post('http://localhost:8000/users', users)
               navigate("/")
             }}

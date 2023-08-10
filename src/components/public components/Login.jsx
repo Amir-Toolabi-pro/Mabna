@@ -48,8 +48,8 @@ const Login = () => {
                 value={getNumber}
                 onChange={(event) => {
                   setGetNumber(event.target.value);
-                  console.log(getNumber);
-                  console.log(validate);
+                  // console.log(getNumber);
+                  // console.log(validate);
                 }}
                 type="number"
                 placeholder='به طور مثال ۰۹۱۲۰۰۰۰۰۰۰'
